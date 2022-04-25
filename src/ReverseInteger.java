@@ -36,4 +36,27 @@ class ReverseInteger {
         else
             return output;
     }
+
+    //Submitted code:
+    public int reverseSubmitted(int x) {
+        boolean isNegative = x < 0;
+        if(isNegative){
+            x = x * -1;
+        }
+        int reverse = 0;
+        int lastDigit = 0;
+        int flag = 0;
+        while (x >= 1) {
+            lastDigit = x % 10; // gives you last digit
+            reverse = reverse * 10 + lastDigit;
+            if ((reverse - lastDigit)/10 != flag)
+            {
+                return 0;
+            }
+            flag = reverse;
+            x = x / 10; // get rid of last digit
+        }
+
+        return isNegative ? reverse*-1 : reverse;
+    }
 }
