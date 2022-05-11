@@ -45,3 +45,7 @@ vcs.xml
 *.vscode
 
 *.out/
+# Default ignored files
+.idea
+*.iml
+out/
