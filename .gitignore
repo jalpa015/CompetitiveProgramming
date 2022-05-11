@@ -39,3 +39,9 @@ hs_err_pid*
 misc.xml
 modules.xml
 vcs.xml
+
+
+# VSCODE 
+*.vscode
+
+*.out/
