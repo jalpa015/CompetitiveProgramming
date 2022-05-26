@@ -25,5 +25,6 @@ public class JMap {
             else
                 System.out.println("Not found");
         }
+        in.close();
     }
 }

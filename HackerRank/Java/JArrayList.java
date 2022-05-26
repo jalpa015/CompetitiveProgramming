@@ -63,5 +63,6 @@ public class JArrayList {
                 System.out.println("ERROR!");
             }
         }
+        sc.close();
     }
 }

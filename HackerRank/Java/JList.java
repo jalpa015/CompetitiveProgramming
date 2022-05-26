@@ -27,5 +27,6 @@ public class JList {
         for(int i : list) {
             System.out.print(i + " ");
         }
+        scan.close();
     }
 }
